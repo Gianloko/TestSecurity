@@ -8,6 +8,9 @@
     <body>
         <h1>Login Form</h1>
         
+        <!--I valori negli elementi Input (login e password) vengono passati al
+        Controller mappato come security/login (che accetta due parametri in ingresso)-->
+        
         <form action="../security/login" method="POST">
             <table border = "1">
                 <tr>
