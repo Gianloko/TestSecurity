@@ -2,7 +2,6 @@ package com.gian.conf;
 
 import com.gian.entities.Authorization;
 import com.gian.entities.User;
-import javax.sql.DataSource;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
