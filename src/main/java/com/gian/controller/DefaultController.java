@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  *
- * @author Gian
+ * @author Gianluca Tessitore
  */
 @Controller
 public class DefaultController {

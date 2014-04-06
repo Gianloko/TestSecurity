@@ -6,12 +6,11 @@
 
 package com.gian.controller;
 
-import com.gian.conf.HibernateConfiguration;
 import com.gian.service.UserService;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -65,10 +64,10 @@ public class SecurityController {
     }
     
     @RequestMapping(value = "logout", method = RequestMethod.POST)
-    public ModelAndView logout(){
+    public ModelAndView logout(HttpServletRequest request){
     
-        Session session = HibernateConfiguration.getSessionFactory().getCurrentSession();
-        session.close();
+        HttpSession stateSession = request.getSession();
+        stateSession.removeAttribute("id");
         
         _log.info("Session Logout...");
         ModelAndView mv = new ModelAndView("index");
