@@ -39,8 +39,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             http
                     .authorizeUrls()
                     .antMatchers(
-                            "/security/**",
-                            "/pages/index"
+                            "/",
+                            "/pages/**",
+                            "security/login",
+                            "security/logout"
                     ).permitAll()                                               
                     .antMatchers("/api/**").hasRole("WRITE")                    
                     .anyRequest().authenticated();                              

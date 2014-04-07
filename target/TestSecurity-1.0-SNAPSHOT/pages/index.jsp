@@ -3,10 +3,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Index Page</title>
     </head>
     <body>
         <h1>Message:</h1> ${messageFromController}
-        <a href="pages/login.jsp">Go to Login Page...</a>
+        <a href="http://localhost:8080/TestSecurity/pages/login.jsp">Go to Login Page...</a>
     </body>
 </html>

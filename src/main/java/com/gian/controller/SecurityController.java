@@ -54,7 +54,7 @@ public class SecurityController {
             stateSession.removeAttribute("id");
             
             _log.info("Login Failed!");
-            mv = new ModelAndView("index");
+            mv = new ModelAndView("../pages/logout");
             mv.addObject("messageFromController", "Login Failed!");
         }
         

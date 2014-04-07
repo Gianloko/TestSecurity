@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1>Login Form</h1>
+        <h2><font style="color: orangered;">${requestMessage}</font></h2>
         
         <!--I valori negli elementi Input (login e password) vengono passati al
         Controller mappato come security/login (che accetta due parametri in ingresso)-->
