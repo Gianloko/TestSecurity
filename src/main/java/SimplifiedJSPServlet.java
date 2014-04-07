@@ -3,11 +3,13 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 /**
  *
- * @author Giangio
+ * @author Gianluca Tessitore
  */
 public class SimplifiedJSPServlet extends HttpServlet{
     
     private static final long serialVersionUID = 1L;
+    
+    //Support class to Modify errors in page declaretion
     
     void mergeScriptlets(
     

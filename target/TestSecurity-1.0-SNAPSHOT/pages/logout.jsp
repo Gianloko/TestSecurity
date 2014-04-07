@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Message: </h1>${messageFromController} <br />
-        <a href="../pages/index.jsp">Return to Index</a>
+        <a href="../pages/index.jsp"><font style="color: red">Return to Index</font></a>
     </body>
 </html>
